@@ -18,3 +18,14 @@
 # Notebook artefacts
  *.backup.ipynb
  report_figures/
+
+
+# macOS - it creates these in every folder and they always sneak in
+ .DS_Store
+
+# The notebook's own model output directory. The deployed copy lives in
+ # deployment/model/, so committing this too would duplicate ~95 MB.
+ models/
+
+# Large archives
+ *.zip
