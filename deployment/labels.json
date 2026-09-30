@@ -1,0 +1,10 @@
+{
+  "class_names": [
+    "Normal",
+    "No Lung Opacity / Not Normal",
+    "Lung Opacity"
+  ],
+  "backbone": "DenseNet121",
+  "img_size": 224,
+  "pneumonia_class_index": 2
+}
