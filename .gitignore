@@ -1,31 +1,33 @@
 # Data - never commit
- *.dcm
- stage_2_train_images/
- stage_2_test_images/
- *.csv
+*.dcm
+stage_2_train_images/
+stage_2_test_images/
+*.csv
 
 # Caches
- cache/
- *.npy
- *.pkl
+cache/
+*.npy
+*.pkl
+
+# Model checkpoints. The deployed copy lives in deployment/model/,
+# so committing this too would duplicate hundreds of megabytes.
+models/
 
 # Environment
- .venv312/
- .python-version
- _pycache_/
- .ipynb_checkpoints/
+.venv312/
+.venv/
+venv/
+.python-version
+__pycache__/
+.ipynb_checkpoints/
 
 # Notebook artefacts
- *.backup.ipynb
- report_figures/
+*.backup.ipynb
+report_figures/
 
-
-# macOS - it creates these in every folder and they always sneak in
- .DS_Store
-
-# The notebook's own model output directory. The deployed copy lives in
- # deployment/model/, so committing this too would duplicate ~95 MB.
- models/
+# macOS
+.DS_Store
 
 # Large archives
- *.zip
+*.zip
+EOF

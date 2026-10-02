@@ -12,7 +12,7 @@ Training pipeline, in order:
 import cv2
 import numpy as np
 
-IMG_SIZE = 224
+IMG_SIZE = 320
 
 
 def load_backbone_preprocess(backbone_name):

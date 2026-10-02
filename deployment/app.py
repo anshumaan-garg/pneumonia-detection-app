@@ -86,7 +86,7 @@ with st.expander("About this model"):
     st.write(f"""
     - **Backbone:** {BACKBONE}, pre-trained on ImageNet
     - **Task:** three-class classification
-    - **Input:** 224 x 224, greyscale converted to three channels
+    - **Input:** 320 x 320, greyscale converted to three channels
     - **Classes:** {", ".join(CLASS_NAMES)}
 
     Trained on 21,347 chest radiographs. Selected on recall and F1 rather than accuracy,
